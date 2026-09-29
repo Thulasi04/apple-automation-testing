@@ -1,5 +1,4 @@
 from playwright.sync_api import Page
-
 from locators import product_locators as locate
 
 class ProductPage:
@@ -11,12 +10,8 @@ class ProductPage:
         self.page.goto("https://www.apple.com/in/shop/")
 
     def is_store_header_visible(self):
-        store_header = self.page.locator(
-            locate.STORE_HEADER
-        ).first
-
+        store_header = self.page.locator(locate.STORE_HEADER).first
         store_header.wait_for(state="visible")
-
         return store_header.is_visible()
 
     def open_mac(self):

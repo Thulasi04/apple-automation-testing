@@ -1,5 +1,4 @@
 from playwright.sync_api import Page
-
 from locators import search_locators as locate
 
 
