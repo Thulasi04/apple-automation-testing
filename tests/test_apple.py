@@ -1,6 +1,5 @@
 import pytest
 from playwright.sync_api import Page
-
 from pages.apple_page import ApplePage
 from helpers import helper_for_pages as hp
 
